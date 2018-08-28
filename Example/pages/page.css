@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+.container {
+    background: #eeeff1;
+}
+
+.tableViewHeader {
+    font-size: 14px;
+    padding: 8px 16px 8px 16px;
+}
+
+.tableView {
+    background: #eeeff1;
+    border-top: 1px solid #cccccc;
+    border-bottom: 1px solid #cccccc;
+    margin-bottom: 16px;
+}
+
+.tableView li {
+    background: #fff;
+    line-height: 44px;
+    padding-left: 16px;
+    position: relative;
+}
+
+.tableView li:not(:last-child)::after {
+    position: absolute;
+    right: 0;
+    left: 16px;
+    bottom: 0;
+    border-bottom: 1px solid #ccc;
+    content: "";
+}
+
+.tableView li:hover {
+    background: #f9f9f9;
+}
+
+.header {
+    font-size: 20px;
+    padding: 8px 16px 8px 16px;
+}
