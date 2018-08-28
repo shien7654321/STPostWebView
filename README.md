@@ -6,8 +6,6 @@
 
 ## A subclass of WKWebView that supports requested by POST
 
-STPostWebView is a subclass of WKWebView that supports requested by POST.
-
 ![STPostWebViewPreview01](https://github.com/shien7654321/STPostWebView/raw/master/Preview/STPostWebViewPreview01.gif)
 
 ## Requirements
