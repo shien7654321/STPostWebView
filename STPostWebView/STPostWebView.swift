@@ -66,7 +66,7 @@ public class STPostWebView: WKWebView, STPostWebViewScriptMessagePresenterDelega
         posted = false
         let jsObjectString = httpBodyJSObjectString(httpBodyString: httpBodyString)
         let postScript = "STPostWebViewPost({path: '\(urlString)', params: \(jsObjectString)});"
-        postUserScript = WKUserScript(source: postScript, injectionTime: .atDocumentEnd, forMainFrameOnly: true)
+        postUserScript = WKUserScript(source: postScript, injectionTime: .atDocumentEnd, forMainFrameOnly: false)
         configuration.userContentController.addUserScript(postUserScript!)
         return super.load(request)
     }
@@ -179,8 +179,8 @@ function STPostWebViewPost(args) {
     }).postMessage();
 }
 """
-        let startUserScript = WKUserScript(source: startScript, injectionTime: .atDocumentStart, forMainFrameOnly: true)
-        let endUserScript = WKUserScript(source: "window.webkit.messageHandlers.STPostWebViewDidFinishNavigation.postMessage({});", injectionTime: .atDocumentEnd, forMainFrameOnly: true)
+        let startUserScript = WKUserScript(source: startScript, injectionTime: .atDocumentStart, forMainFrameOnly: false)
+        let endUserScript = WKUserScript(source: "window.webkit.messageHandlers.STPostWebViewDidFinishNavigation.postMessage({});", injectionTime: .atDocumentEnd, forMainFrameOnly: false)
         configuration.userContentController.addUserScript(startUserScript)
         configuration.userContentController.addUserScript(endUserScript)
         configuration.userContentController.add(scriptMessagePresenter, name: "STPostWebViewGetPosted")
