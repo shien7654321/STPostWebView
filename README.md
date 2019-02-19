@@ -1,8 +1,9 @@
 # STPostWebView
 
+[![Language](https://img.shields.io/badge/language-Swift-limegreen.svg?style=flat)](http://cocoapods.org/pods/STPostWebView)
+[![Platform](https://img.shields.io/cocoapods/p/STPostWebView.svg?style=flat)](http://cocoapods.org/pods/STPostWebView)
 [![Version](https://img.shields.io/cocoapods/v/STPostWebView.svg?style=flat)](http://cocoapods.org/pods/STPostWebView)
 [![License](https://img.shields.io/cocoapods/l/STPostWebView.svg?style=flat)](http://cocoapods.org/pods/STPostWebView)
-[![Platform](https://img.shields.io/cocoapods/p/STPostWebView.svg?style=flat)](http://cocoapods.org/pods/STPostWebView)
 
 ## A subclass of WKWebView that supports requested by POST
 
