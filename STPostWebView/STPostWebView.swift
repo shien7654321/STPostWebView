@@ -212,7 +212,7 @@ function STPostWebViewPost(args) {
             return
         }
         var userScripts = configuration.userContentController.userScripts
-        guard let index = userScripts.index(of: thePostUserScript) else {
+        guard let index = userScripts.firstIndex(of: thePostUserScript) else {
             postUserScript = nil
             return
         }

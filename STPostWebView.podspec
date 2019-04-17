@@ -12,7 +12,7 @@ Pod::Spec.new do |s|
   s.frameworks   = "Foundation", "UIKit", "WebKit"
   s.source_files = "STPostWebView/*.{swift}"
   s.compiler_flags = "-fmodules"
-  s.pod_target_xcconfig = { 'SWIFT_VERSION' => '4.2' }
+  s.pod_target_xcconfig = { 'SWIFT_VERSION' => '5.0' }
   s.description    = <<-DESC
   STPostWebView is a subclass of WKWebView that supports requested by POST.
                        DESC

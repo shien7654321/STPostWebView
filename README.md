@@ -15,7 +15,7 @@ STPostWebView is a subclass of WKWebView that supports requested by POST.
 
 - iOS 8.0 or later
 - ARC
-- Swift 4.2
+- Swift 5.0
 
 ## Installation
 

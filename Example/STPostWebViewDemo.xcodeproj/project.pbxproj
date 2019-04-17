@@ -125,7 +125,7 @@
 				TargetAttributes = {
 					DCD819C52135331200462314 = {
 						CreatedOnToolsVersion = 9.4.1;
-						LastSwiftMigration = 1000;
+						LastSwiftMigration = 1020;
 					};
 				};
 			};
@@ -134,7 +134,9 @@
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				en,
 				Base,
+				"zh-Hans",
 			);
 			mainGroup = DCD819BD2135331200462314;
 			productRefGroup = DCD819C72135331200462314 /* Products */;
@@ -362,7 +364,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.sohu-inc.STPostWebViewDemo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -382,7 +384,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.sohu-inc.STPostWebViewDemo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
