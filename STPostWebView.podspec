@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "STPostWebView"
-  s.version      = "0.0.4"
+  s.version      = "0.0.5"
   s.summary      = "A subclass of WKWebView that supports requested by POST."
   s.homepage     = "https://github.com/shien7654321/STPostWebView"
   s.author       = { "Suta" => "shien7654321@163.com" }
